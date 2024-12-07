@@ -3,11 +3,11 @@
 Step-by-Step Guide
 
 ## 1. Create a VPC:
-Log in to the AWS Management Console.
-Navigate to the VPC service.
-Click "Create VPC."
-Choose a CIDR block (e.g., 10.0.0.0/16).
-Click "Create VPC."
+* Log in to the AWS Management Console.
+* Navigate to the VPC service.
+* Click "Create VPC."
+* Choose a CIDR block (e.g., 10.0.0.0/16).
+* Click "Create VPC."
 
 
 ## 2. Create a Public Subnet:
