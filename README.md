@@ -1,6 +1,6 @@
 ### Launching_React_App_AWS
 
-Step-by-Step Guide
+Step-by-Step Guide Public Access
 
 ## 1. Create a VPC:
 * Log in to the AWS Management Console.
@@ -102,3 +102,40 @@ Step-by-Step Guide
 * Clone your React app repository.
 * Install dependencies: npm install
 * Start the React app: npm start
+
+
+Step-by-step Guide for Private 
+
+## 1. Create a NAT Gateway:
+In the VPC dashboard, select the newly created VPC.
+* Click "NAT Gateways."
+* Click "Create NAT Gateway."
+* Choose an availability zone.
+* Select a subnet for the NAT Gateway (this should be a public subnet).
+* Choose an Elastic IP address or create a new one.
+* Click "Create NAT Gateway."
+
+  
+## 2. Create a Route Table for the Private Subnet:
+* In the VPC dashboard, select the newly created VPC.
+* Click "Route Tables."
+* Click "Create route table."
+* Name the route table.
+* Click "Create route table."
+
+  
+## 3. Create Routes for the Private Subnet:
+* In the VPC dashboard, select the newly created route table.
+* Click "Routes."
+* Click "Add route."
+* Set the Destination CIDR block to 0.0.0.0/0.
+* Select the NAT Gateway as the target.
+* Click "Save."
+
+  
+## 4. Associate the Route Table with the Private Subnet:
+* In the VPC dashboard, select the newly created private subnet.
+* Click the "Route Table associations" tab.
+* Click "Edit route tables."
+* Select the route table you created for the private subnet.
+* Click "Save."
