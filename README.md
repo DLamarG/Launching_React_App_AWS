@@ -1,6 +1,6 @@
 ### Launching_React_App_AWS
 
-Step-by-Step Guide Public Access
+### Step-by-Step Guide Public Access
 
 ## 1. Create a VPC:
 * Log in to the AWS Management Console.
@@ -104,7 +104,7 @@ Step-by-Step Guide Public Access
 * Start the React app: npm start
 
 
-Step-by-step Guide for Private 
+### Step-by-step Guide for Private 
 
 ## 1. Create a NAT Gateway:
 In the VPC dashboard, select the newly created VPC.
