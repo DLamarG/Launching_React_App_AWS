@@ -38,9 +38,9 @@ resource "aws_security_group" "react_sg" {
 
 # Create Ubuntu EC2 Instance
 resource "aws_instance" "react_instance" {
-  ami           = "ami-xxxxxxxxxxxxxxxxx"  # Replace with the correct Ubuntu AMI ID
+  ami           = "ami-036841078a4b68e14"  # Replace with the correct Ubuntu AMI ID
   instance_type = "t2.micro"
-  key_name      = "your-keypair-name"      # Replace with your key pair name
+  key_name      = "mariaDB_server_key"      # Replace with your key pair name
 
   security_groups = [aws_security_group.react_sg.name]
 
