@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"  # Specify your AWS region
+  region = "us-east-1"  # Specify your AWS region
 }
 
 # Create Security Group
@@ -50,7 +50,7 @@ resource "aws_instance" "react_instance" {
               apt install -y git
               curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
               apt install -y nodejs
-              git clone <your-repository-url> /home/ubuntu/react-app
+              git clone https://github.com/mikhail-w/pokedex.git /home/ubuntu/react-app
               cd /home/ubuntu/react-app
               npm install
               npm run dev -- --host
